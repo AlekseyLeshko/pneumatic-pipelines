@@ -24,10 +24,9 @@ describe('check prop', () => {
   })
 
   test('should update prop', () => {
-    const name = 'new-name'
+    const newName = 'new-name'
     const testObj = { test: 'test', name: 'name' }
-    const expected = { ...testObj, name }
 
-    expect(checkProp('name', name)(testObj)).toEqual(expected)
+    expect(checkProp('name', newName)(testObj)).toEqual(testObj)
   })
 })

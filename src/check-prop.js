@@ -1,2 +1,2 @@
 module.exports = (propName, value = '') => (obj = {}) =>
-  !propName ? {} : { ...obj, [propName]: value }
+  !propName ? {} : { [propName]: value , ...obj }
