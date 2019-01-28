@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AlekseyLeshko/pneumatic-pipelines#readme",
   "devDependencies": {
     "jest": "^24.0.0"
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
   }
 }
