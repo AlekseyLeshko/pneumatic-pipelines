@@ -1,12 +1,2 @@
-const checkProp = (propName, defaultVal = '') => (obj) => {
-  const newObj = obj === undefined ? {} : obj
-  if (!propName) {
-    return newObj
-  }
-
-  newObj[propName] = defaultVal
-
-  return newObj
-}
-
-module.exports = checkProp
+module.exports = (propName, value = '') => (obj = {}) =>
+  !propName ? {} : { ...obj, [propName]: value }
