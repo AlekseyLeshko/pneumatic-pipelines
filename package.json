@@ -1,0 +1,19 @@
+{
+  "name": "pneumatic-pipelines",
+  "version": "0.0.0",
+  "description": "Pipelines enhancer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlekseyLeshko/pneumatic-pipelines.git"
+  },
+  "author": "Aleksey Leshko <alekseyleshko@gmail.com> (https://github.com/AlekseyLeshko)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlekseyLeshko/pneumatic-pipelines/issues"
+  },
+  "homepage": "https://github.com/AlekseyLeshko/pneumatic-pipelines#readme"
+}
