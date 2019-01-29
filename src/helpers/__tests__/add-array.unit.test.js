@@ -1,7 +1,9 @@
-const addArtifacts = require('../add-artifacts')
+const addArray = require('../add-array.js')
 
-describe('add artifacts', () => {
-  test('should add artifacts in an object', () => {
+const addArtifacts = addArray('artifacts')
+
+describe('add array', () => {
+  test('should add array in an object', () => {
     const artifacts = [ 'dist/**', 'screenshots/**' ]
     const testObj = {}
     const expected = {
@@ -11,7 +13,7 @@ describe('add artifacts', () => {
     expect(addArtifacts(artifacts)(testObj)).toEqual(expected)
   })
 
-  test('should update artifacts in an object', () => {
+  test('should update array in an object', () => {
     const artifacts = [ 'dist/**', 'screenshots/**' ]
     const testObj = { artifacts: [ 'test' ] }
     const expected = {
