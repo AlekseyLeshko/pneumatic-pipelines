@@ -5,6 +5,8 @@ describe('pneumatic pipelines', () => {
   test('should return step', () => {
     const expected = {
       caches: [ 'node', 'yarn' ],
+      image: 'node:11.6.0',
+      deployment: 'production',
       script: [
         'ENV=production',
         'yarn install',
@@ -25,6 +27,8 @@ describe('pneumatic pipelines', () => {
       step.addScript('yarn build'),
       step.addArtifacts(['dist/**']),
       step.addArtifact('screenshots/**'),
+      step.addImage('node:11.6.0'),
+      step.addDeployment('production'),
     )()
 
     expect(stepObj).toEqual(expected)
