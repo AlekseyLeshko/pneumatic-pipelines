@@ -6,23 +6,30 @@ describe('add array', () => {
   test('should add array in an object', () => {
     const artifacts = [ 'dist/**', 'screenshots/**' ]
     const testObj = {}
-    const expected = {
-      artifacts,
-    }
+    const expected = { step: { artifacts } }
 
     expect(addArtifacts(artifacts)(testObj)).toEqual(expected)
   })
 
   test('should update array in an object', () => {
     const artifacts = [ 'dist/**', 'screenshots/**' ]
-    const testObj = { artifacts: [ 'test' ] }
+    const testObj = { step: { artifacts: [ 'test' ] } }
     const expected = {
-      artifacts: [
-        ...testObj.artifacts,
-        ...artifacts,
-      ],
+      step: {
+        artifacts: [
+          ...testObj.step.artifacts,
+          ...artifacts,
+        ],
+      },
     }
 
     expect(addArtifacts(artifacts)(testObj)).toEqual(expected)
+  })
+
+  test('should add array in undefined', () => {
+    const artifacts = [ 'dist/**', 'screenshots/**' ]
+    const expected = { step: { artifacts } }
+
+    expect(addArtifacts(artifacts)()).toEqual(expected)
   })
 })

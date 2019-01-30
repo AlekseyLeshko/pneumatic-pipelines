@@ -1,4 +1,3 @@
-const addArray = require('./add-array')
-const { pipe, mergeDeepLeft, mergeDeepWith, concat } = require('ramda')
+const { mergeDeepLeft } = require('ramda')
 
-module.exports = propName => value => (obj) => mergeDeepLeft({ [propName]: value }, obj)
+module.exports = propName => value => (obj) => mergeDeepLeft({ step: { [propName]: value } }, obj)

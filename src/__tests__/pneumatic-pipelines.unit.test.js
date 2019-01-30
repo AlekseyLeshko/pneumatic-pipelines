@@ -4,16 +4,18 @@ const { step } = require('../index')
 describe('pneumatic pipelines', () => {
   test('should return step', () => {
     const expected = {
-      caches: [ 'node', 'yarn' ],
-      image: 'node:11.6.0',
-      deployment: 'production',
-      script: [
-        'ENV=production',
-        'yarn install',
-        'yarn test',
-        'yarn build',
-      ],
-      artifacts: [ 'dist/**', 'screenshots/**' ],
+      step: {
+        caches: [ 'node', 'yarn' ],
+        image: 'node:11.6.0',
+        deployment: 'production',
+        script: [
+          'ENV=production',
+          'yarn install',
+          'yarn test',
+          'yarn build',
+        ],
+        artifacts: [ 'dist/**', 'screenshots/**' ],
+      },
     }
 
     const stepObj = pipe(

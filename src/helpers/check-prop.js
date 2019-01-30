@@ -1,2 +1,2 @@
-module.exports = (propName, value = '') => (obj = {}) =>
-  !propName ? {} : { [propName]: value , ...obj }
+module.exports = (propName, value = '') => (obj = { step: {} }) =>
+  !propName ? { step: {} } : { step: { [propName]: value , ...obj.step } }
