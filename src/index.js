@@ -1,6 +1,7 @@
 const addItem = require('./helpers/add-item')
 const addArray = require('./helpers/add-array')
 const addString = require('./helpers/add-string')
+const addParallel = require('./add-parallel')
 
 const step = {
   addArtifact: addItem('artifacts'),
@@ -15,5 +16,6 @@ const step = {
 }
 
 module.exports = {
+  addParallel,
   step,
 }
