@@ -15,4 +15,10 @@ describe('add string', () => {
 
     expect(addImage('node:11.6.0')(step)).toEqual(expected)
   })
+
+  test('should update image in undefined', () => {
+    const expected = { step: { image: 'node:11.6.0' } }
+
+    expect(addImage('node:11.6.0')()).toEqual(expected)
+  })
 })
