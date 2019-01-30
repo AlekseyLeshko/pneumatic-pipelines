@@ -1,3 +1,5 @@
+const fs = require('fs')
+const yaml = require('yaml')
 const addItem = require('./helpers/add-item')
 const addArray = require('./helpers/add-array')
 const addString = require('./helpers/add-string')
@@ -18,4 +20,8 @@ const step = {
 module.exports = {
   addParallel,
   step,
+  generate: (pipelines) => {
+    const str = yaml.stringify(pipelines)
+    fs.writeFileSync('bitbucket-pipelines.yml', str)
+  },
 }
