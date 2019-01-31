@@ -5,10 +5,9 @@ const addArtifacts = addArray('artifacts')
 describe('add array', () => {
   test('should add array in an object', () => {
     const artifacts = [ 'dist/**', 'screenshots/**' ]
-    const testObj = {}
     const expected = { step: { artifacts } }
 
-    expect(addArtifacts(artifacts)(testObj)).toEqual(expected)
+    expect(addArtifacts(artifacts)({})).toEqual(expected)
   })
 
   test('should update array in an object', () => {
