@@ -4,7 +4,9 @@
   "description": "Pipelines enhancer",
   "main": "src/index.js",
   "scripts": {
-    "tdd": "jest --watchAll --coverage --coverageReporters html"
+    "test:unit": "jest --config ./jest-unit.config.js",
+    "tdd": "npm run test:unit -- --watchAll",
+    "test": "npm run test:unit"
   },
   "repository": {
     "type": "git",
