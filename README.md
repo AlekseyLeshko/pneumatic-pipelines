@@ -1,4 +1,7 @@
 # pneumatic-pipelines
+
+[![Build Status](https://travis-ci.org/AlekseyLeshko/pneumatic-pipelines.svg?branch=master)](https://travis-ci.org/AlekseyLeshko/pneumatic-pipelines)
+
 Pipelines enhancer
 
 ## Roadmap
@@ -13,4 +16,6 @@ Pipelines enhancer
   - [ ] definitions
   - [ ] pipelines
 - [ ] Add methods for default, tags, branches, custom
-- [ ] Add CI([travis-ci](https://travis-ci.org) or [circleci](https://circleci.com))
+- [ ] Add CI
+  - [x] [travis-ci](https://travis-ci.org)
+  - [ ] or [circleci](https://circleci.com))
