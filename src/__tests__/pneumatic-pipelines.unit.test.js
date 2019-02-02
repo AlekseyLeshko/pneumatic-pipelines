@@ -1,10 +1,11 @@
-const { pipe, mergeDeepLeft, mergeDeepWith, concat } = require('ramda')
+const { pipe } = require('ramda')
 const { step } = require('../index')
 
 describe('pneumatic pipelines', () => {
   test('should return step', () => {
     const expected = {
       step: {
+        name: 'awesome step',
         caches: [ 'node', 'yarn' ],
         image: 'node:11.6.0',
         deployment: 'production',
@@ -31,6 +32,7 @@ describe('pneumatic pipelines', () => {
       step.addArtifact('screenshots/**'),
       step.addImage('node:11.6.0'),
       step.addDeployment('production'),
+      step.addName('awesome step'),
     )()
 
     expect(stepObj).toEqual(expected)
