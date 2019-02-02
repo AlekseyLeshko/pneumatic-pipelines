@@ -2,8 +2,15 @@ const fs = require('fs')
 const generate = require('../generate')
 
 describe('generate', () => {
-  test('should write file with yaml', () => {
+  beforeEach(() => {
     fs.writeFileSync = jest.fn()
+  })
+
+  afterEach(() => {
+    fs.writeFileSync.mockReset()
+  })
+
+  test('should create yaml file', () => {
     const pipelines = {
       image: 'node:11.0.0',
       pipelines: { default: {} },
