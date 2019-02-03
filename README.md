@@ -38,3 +38,6 @@ If your config files more then 300 lines, you must try this solution.
   - [x] [travis-ci](https://travis-ci.org)
   - [ ] or [circleci](https://circleci.com))
 - [ ] Add sresteps(presets os steps)
+- [ ] Rules support
+  - [ ] Add condition for number of steps in branch, less then 10 steps
+- [ ] Sorting props in object
