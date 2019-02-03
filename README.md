@@ -24,7 +24,7 @@ If your config files more then 300 lines, you must try this solution.
 ## Roadmap
 - [x] Fill readme file
 - [ ] Add script for cli
-- [ ] Sort props in step obj
+- [ ] Sorting props in object
 - [ ] Add demo repo on [bitbucket](https://bitbucket.org)
 - [ ] Release v1.0.0 version and publish in [npm](https://www.npmjs.com)
 - [x] Add eslint
@@ -40,4 +40,3 @@ If your config files more then 300 lines, you must try this solution.
 - [ ] Add sresteps(presets os steps)
 - [ ] Rules support
   - [ ] Add condition for number of steps in branch, less then 10 steps
-- [ ] Sorting props in object
