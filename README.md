@@ -19,3 +19,4 @@ Pipelines enhancer
 - [ ] Add CI
   - [x] [travis-ci](https://travis-ci.org)
   - [ ] or [circleci](https://circleci.com))
+- [ ] Add sresteps(presets os steps)
