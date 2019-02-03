@@ -7,7 +7,7 @@ const pipelines = {
 }
 
 describe('generate', () => {
-  beforeEach(() => fs.writeFileSync = jest.fn())
+  beforeEach(() => { fs.writeFileSync = jest.fn() })
 
   afterEach(() => {
     expect(fs.writeFileSync).toHaveBeenCalled()

@@ -2,7 +2,6 @@ const { mergeDeepLeft } = require('ramda')
 const addItem = require('./helpers/add-item')
 const addArray = require('./helpers/add-array')
 const addString = require('./helpers/add-string')
-const addParallel = require('./add-parallel')
 
 const mergeForStep = ({ propName, value, obj }) => mergeDeepLeft({ step: { [propName]: value } }, obj)
 
