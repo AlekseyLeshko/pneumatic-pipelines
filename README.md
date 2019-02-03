@@ -2,10 +2,27 @@
 
 [![Build Status](https://travis-ci.org/AlekseyLeshko/pneumatic-pipelines.svg?branch=master)](https://travis-ci.org/AlekseyLeshko/pneumatic-pipelines)
 
-Pipelines enhancer
+Enhancer for [bitbucket-pipelines](https://bitbucket.org/product/features/pipelines)
+
+## Why pneumatic pipelines?
+ * Pipelines as code, use javascript.
+ * Each step it's a unique object, power of [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+ * Generation a valid yaml file based on json object
+
+Soon in the new versions
+
+ * [bitbucket-pipelines](https://bitbucket.org/product/features/pipelines) rules support
+ * Presets of steps
+ * Sorting props in object
+
+## Motivation
+Frequently pipelines file include repeating steps with minimal changes or without them. For example step for run unit tests.
+You also use environment variables, the same variables each time.
+And finally, all these branches, steps and variables need support and empowerment.
+If your config files more then 300 lines, you must try this solution.
 
 ## Roadmap
-- [ ] Fill readme file
+- [x] Fill readme file
 - [ ] Add script for cli
 - [ ] Sort props in step obj
 - [ ] Add demo repo on [bitbucket](https://bitbucket.org)
