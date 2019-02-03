@@ -11,6 +11,7 @@ Pipelines enhancer
 - [ ] Add demo repo on [bitbucket](https://bitbucket.org)
 - [ ] Release v1.0.0 version and publish in [npm](https://www.npmjs.com)
 - [ ] Add eslint
+- [ ] Add lint-staged
 - [ ] Add methods for root object
   - [x] image
   - [ ] definitions
