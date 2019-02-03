@@ -34,7 +34,7 @@ If your config files more then 300 lines, you must try this solution.
   - [ ] definitions
   - [ ] pipelines
 - [ ] Add methods for default, tags, branches, custom
-- [ ] Add CI
+- [ ] Add CI, and tags: cli, cli-app
   - [x] [travis-ci](https://travis-ci.org)
   - [ ] or [circleci](https://circleci.com))
 - [ ] Add sresteps(presets os steps)
