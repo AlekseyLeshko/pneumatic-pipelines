@@ -37,6 +37,6 @@ If your config files more then 300 lines, you must try this solution.
 - [ ] Add CI, and tags: cli, cli-app
   - [x] [travis-ci](https://travis-ci.org)
   - [ ] or [circleci](https://circleci.com))
-- [ ] Add sresteps(presets os steps)
+- [ ] Add presteps(presets of steps)
 - [ ] Rules support
   - [ ] Add condition for number of steps in branch, less then 10 steps
