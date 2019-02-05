@@ -8,11 +8,11 @@ Enhancer for [bitbucket-pipelines](https://bitbucket.org/product/features/pipeli
  * Pipelines as code, use javascript.
  * Each step it's a unique object, power of [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
  * Generation a valid yaml file based on json object
+ * Presets of steps
 
 Soon in the new versions
 
  * [bitbucket-pipelines](https://bitbucket.org/product/features/pipelines) rules support
- * Presets of steps
  * Sorting props in object
 
 ## CLI
