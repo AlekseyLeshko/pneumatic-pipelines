@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const path = require('path')
 const filename = process.argv[2]
 const fs = require('fs')
