@@ -15,6 +15,11 @@ Soon in the new versions
  * Presets of steps
  * Sorting props in object
 
+## CLI
+```javascript
+pneumatic-pipelines filename.js
+```
+
 ## Motivation
 Frequently pipelines file include repeating steps with minimal changes or without them. For example step for run unit tests.
 You also use environment variables, the same variables each time.

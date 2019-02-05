@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Pipelines enhancer",
   "main": "src/index.js",
+  "bin": {
+    "pneumatic-pipelines": "./bin/cli.js"
+  },
   "scripts": {
     "test:unit": "jest --config ./jest-unit.config.js",
     "tdd": "npm run test:unit -- --watchAll",
