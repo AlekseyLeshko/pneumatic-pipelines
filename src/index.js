@@ -11,4 +11,7 @@ module.exports = {
   addDefinitions: (obj) => ({
     definitions: obj,
   }),
+  addPipelines: (obj) => ({
+    pipelines: obj,
+  }),
 }
