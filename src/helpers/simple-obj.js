@@ -1,1 +1,7 @@
-module.exports = (propName) => (obj) => ({ [propName]: obj })
+module.exports = (propName) =>
+  (obj) =>
+    (pipelines) =>
+      ({
+        ...pipelines,
+        [propName]: obj,
+      })

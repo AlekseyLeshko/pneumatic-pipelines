@@ -1,5 +1,8 @@
 const { pipe } = require('ramda')
-const { step, addDefinitions, addPipelines } = require('../index')
+const {
+  step, addDefinitions, addPipelines,
+  addImage,
+} = require('../index')
 
 describe('pneumatic pipelines', () => {
   test('should return step', () => {
@@ -38,8 +41,10 @@ describe('pneumatic pipelines', () => {
     expect(stepObj).toEqual(expected)
   })
 
-  test('should return definitions', () => {
+  test('should build pipelines', () => {
     const expected = {
+      image: 'node:11',
+      pipelines: { default: {}, branchs: {} },
       definitions: {
         caches: {
           yarn: '/root/.cache/yarn',
@@ -47,20 +52,19 @@ describe('pneumatic pipelines', () => {
       },
     }
 
-    const obj = {
-      caches: {
-        yarn: '/root/.cache/yarn',
-      },
-    }
+    const fun = pipe(
+      addImage('node:11'),
+      addDefinitions({
+        caches: {
+          yarn: '/root/.cache/yarn',
+        },
+      }),
+      addPipelines({
+        default: {},
+        branchs: {},
+      }),
+    )
 
-    expect(addDefinitions(obj)).toEqual(expected)
-  })
-
-  test('should return pipelines', () => {
-    const expected = { pipelines: { default: {}, branchs: {} } }
-
-    const obj = { default: {}, branchs: {} }
-
-    expect(addPipelines(obj)).toEqual(expected)
+    expect(fun()).toEqual(expected)
   })
 })
