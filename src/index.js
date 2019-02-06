@@ -5,7 +5,7 @@ const prestep = require('./prestep')
 const simpleObj = require('./helpers/simple-obj')
 
 module.exports = {
-  image: addString('image')(),
+  addImage: addString('image')(),
   addParallel,
   step,
   prestep,
