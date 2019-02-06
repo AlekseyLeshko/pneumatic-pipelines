@@ -45,3 +45,4 @@ If your config files more then 300 lines, you must try this solution.
 - [x] Add presteps(presets of steps)
 - [ ] Rules support
   - [ ] Add condition for number of steps in branch, less then 10 steps
+- [ ] Add examples
