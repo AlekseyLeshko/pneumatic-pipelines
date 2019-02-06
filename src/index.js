@@ -6,4 +6,7 @@ module.exports = {
   image: addString('image')(),
   addParallel,
   step,
+  addDefinitions: (obj) => ({
+    definitions: obj,
+  }),
 }
