@@ -34,10 +34,10 @@ If your config files more then 300 lines, you must try this solution.
 - [x] Release v1.0.0 version and publish in [npm](https://www.npmjs.com)
 - [x] Add eslint
 - [x] Add lint-staged
-- [ ] Add methods for root object
+- [x] Add methods for root object
   - [x] image
-  - [ ] definitions
-  - [ ] pipelines
+  - [x] definitions
+  - [x] pipelines
 - [ ] Add methods for default, tags, branches, custom
 - [ ] Add CI, and tags: cli, cli-app
   - [x] [travis-ci](https://travis-ci.org)
