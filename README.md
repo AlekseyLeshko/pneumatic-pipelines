@@ -27,22 +27,11 @@ And finally, all these branches, steps and variables need support and empowermen
 If your config files more then 300 lines, you must try this solution.
 
 ## Roadmap
-- [x] Fill readme file
-- [x] Add script for cli
 - [ ] Sorting props in object
-- [ ] Add demo repo on [bitbucket](https://bitbucket.org)
-- [x] Release v1.0.0 version and publish in [npm](https://www.npmjs.com)
-- [x] Add eslint
-- [x] Add lint-staged
-- [x] Add methods for root object
-  - [x] image
-  - [x] definitions
-  - [x] pipelines
+- [ ] Add examples
+  - [ ] Add demo repo on [bitbucket](https://bitbucket.org)
 - [ ] Add methods for default, tags, branches, custom
-- [ ] Add CI, and tags: cli, cli-app
-  - [x] [travis-ci](https://travis-ci.org)
-  - [ ] or [circleci](https://circleci.com))
-- [x] Add presteps(presets of steps)
+- [ ] Add CI
+  - [ ] [circleci](https://circleci.com))
 - [ ] Rules support
   - [ ] Add condition for number of steps in branch, less then 10 steps
-- [ ] Add examples
