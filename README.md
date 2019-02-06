@@ -28,10 +28,10 @@ If your config files more then 300 lines, you must try this solution.
 
 ## Roadmap
 - [x] Fill readme file
-- [ ] Add script for cli
+- [x] Add script for cli
 - [ ] Sorting props in object
 - [ ] Add demo repo on [bitbucket](https://bitbucket.org)
-- [ ] Release v1.0.0 version and publish in [npm](https://www.npmjs.com)
+- [x] Release v1.0.0 version and publish in [npm](https://www.npmjs.com)
 - [x] Add eslint
 - [x] Add lint-staged
 - [ ] Add methods for root object
