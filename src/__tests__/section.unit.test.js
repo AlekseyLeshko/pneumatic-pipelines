@@ -32,4 +32,26 @@ describe('section', () => {
 
     expect(getPipeline()).toEqual(expected)
   })
+
+  test('should customize section', () => {
+    const expected = {
+      default: [{
+        step: {},
+      }],
+    }
+
+    const actual = section.addDefault([{
+      step: {},
+    }])()
+
+    expect(actual).toEqual(expected)
+  })
+
+  test('should customize branches', () => {
+    const expected = { branches: { master: [] } }
+
+    const actual = section.addBranches({ master: [] })()
+
+    expect(actual).toEqual(expected)
+  })
 })
