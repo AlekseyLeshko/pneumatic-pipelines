@@ -1,39 +1,35 @@
+const { pipe } = require('ramda')
 const section = require('../section')
 
 describe('section', () => {
-  test('should return section for default', () => {
-    const expected = { default: {} }
-
-    expect(section.addDefault()()).toEqual(expected)
+  test('should return all sections', () => {
+    expect(section.addDefault()()).toEqual({ default: {} })
+    expect(section.addBranches()()).toEqual({ branches: {} })
+    expect(section.addTags()()).toEqual({ tags: {} })
+    expect(section.addCustom()()).toEqual({ custom: {} })
+    expect(section.addPullRequests()()).toEqual({ 'pull-requests': {} })
+    expect(section.addBookmarks()()).toEqual({ bookmarks: {} })
   })
 
-  test('should return section for branches', () => {
-    const expected = { branches: {} }
+  test('should build pipeline with sections', () => {
+    const expected = {
+      default: {},
+      branches: {},
+      tags: {},
+      custom: {},
+      'pull-requests': {},
+      bookmarks: {},
+    }
 
-    expect(section.addBranches()()).toEqual(expected)
-  })
+    const getPipeline = pipe(
+      section.addDefault(),
+      section.addBranches(),
+      section.addTags(),
+      section.addCustom(),
+      section.addPullRequests(),
+      section.addBookmarks(),
+    )
 
-  test('should return section for tags', () => {
-    const expected = { tags: {} }
-
-    expect(section.addTags()()).toEqual(expected)
-  })
-
-  test('should return section for custom', () => {
-    const expected = { custom: {} }
-
-    expect(section.addCustom()()).toEqual(expected)
-  })
-
-  test('should return section for pull-requests', () => {
-    const expected = { 'pull-requests': {} }
-
-    expect(section.addPullRequests()()).toEqual(expected)
-  })
-
-  test('should return section for bookmarks', () => {
-    const expected = { bookmarks: {} }
-
-    expect(section.addBookmarks()()).toEqual(expected)
+    expect(getPipeline()).toEqual(expected)
   })
 })
