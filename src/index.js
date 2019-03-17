@@ -3,6 +3,7 @@ const addParallel = require('./add-parallel')
 const addString = require('./helpers/add-string')
 const prestep = require('./prestep')
 const simpleObj = require('./helpers/simple-obj')
+const pipes = require('./pipes/pipes')
 
 module.exports = {
   addImage: addString('image')(),
@@ -11,4 +12,5 @@ module.exports = {
   prestep,
   addDefinitions: simpleObj('definitions'),
   addPipelines: simpleObj('pipelines'),
+  pipes,
 }
