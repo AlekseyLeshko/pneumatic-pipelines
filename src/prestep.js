@@ -2,7 +2,7 @@ module.exports = {
   definition: {
     cacheOfYarn: () => ({
       caches: {
-        yarn: '/root/.cache/yarn',
+        yarn: '/usr/local/share/.cache/yarn/v4',
       },
     }),
   },
