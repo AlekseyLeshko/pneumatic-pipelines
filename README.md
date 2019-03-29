@@ -35,3 +35,5 @@ If your config files more then 300 lines, you must try this solution.
   - [ ] [circleci](https://circleci.com))
 - [ ] Rules support
   - [ ] Add condition for number of steps in branch, less then 10 steps
+- [ ] Check config on [site](https://bitbucket-pipelines.atlassian.io/validator)
+- [ ] [pipes documentation](https://confluence.atlassian.com/bitbucket/pipes-958765631.html)
