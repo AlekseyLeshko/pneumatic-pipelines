@@ -7,7 +7,7 @@ describe('pipes:slack-notify', () => {
       variables: {
         WEBHOOK_URL: 'test-webhook',
         MESSAGE: 'test-message',
-        DEBUG: false,
+        DEBUG: 'false',
       },
     }
 
@@ -23,7 +23,7 @@ describe('pipes:slack-notify', () => {
       variables: {
         WEBHOOK_URL: 'test-webhook',
         MESSAGE: 'test-message',
-        DEBUG: true,
+        DEBUG: 'true',
       },
     }
 

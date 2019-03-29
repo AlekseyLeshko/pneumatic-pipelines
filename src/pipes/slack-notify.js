@@ -3,6 +3,6 @@ module.exports = ({ webhook, message, debug = false }) => ({
   variables: {
     WEBHOOK_URL: webhook,
     MESSAGE: message,
-    DEBUG: debug,
+    DEBUG: debug.toString(),
   },
 })
