@@ -18,6 +18,9 @@ describe('pneumatic pipelines', () => {
           'yarn test',
           'yarn build',
         ],
+        'after-script': [
+          'echo "after script has run!"',
+        ],
         artifacts: [ 'dist/**', 'screenshots/**' ],
       },
     }
@@ -31,6 +34,7 @@ describe('pneumatic pipelines', () => {
         'yarn test',
       ]),
       step.addScript('yarn build'),
+      step.addAfterScript(['echo "after script has run!"']),
       step.addArtifacts(['dist/**']),
       step.addArtifact('screenshots/**'),
       step.addImage('node:11.6.0'),

@@ -12,6 +12,7 @@ module.exports = {
   addCaches: addArray('caches'),
   addScript: addItem('script'),
   addScripts: addArray('script'),
+  addAfterScript: addArray('after-script'),
   addImage: addString('image')(mergeForStep),
   addDeployment: addString('deployment')(mergeForStep),
   addName: addString('name')(mergeForStep),
