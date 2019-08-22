@@ -10,6 +10,14 @@ describe('pipes:aws-s3-deploy', () => {
         AWS_DEFAULT_REGION: '$AWS_DEFAULT_REGION',
         S3_BUCKET: '$AWS_S3_BUCKET',
         LOCAL_PATH: 'dist/',
+        CONTENT_ENCODING: 'contentEncoding',
+        ACL: 'acl',
+        STORAGE_CLASS: 'storageClass',
+        CACHE_CONTROL: 'cacheControl',
+        EXPIRES: 'expires',
+        DELETE_FLAG: 'deleteFlag',
+        EXTRA_ARGS: 'extraArgs',
+        DEBUG: 'debug',
       },
     }
 
@@ -19,6 +27,14 @@ describe('pipes:aws-s3-deploy', () => {
       awsDefaultRegion: '$AWS_DEFAULT_REGION',
       s3Bucket: '$AWS_S3_BUCKET',
       localPath: 'dist/',
+      contentEncoding: 'contentEncoding',
+      acl: 'acl',
+      storageClass: 'storageClass',
+      cacheControl: 'cacheControl',
+      expires: 'expires',
+      deleteFlag: 'deleteFlag',
+      extraArgs: 'extraArgs',
+      debug: 'debug',
     })).toEqual(expected)
   })
 })
