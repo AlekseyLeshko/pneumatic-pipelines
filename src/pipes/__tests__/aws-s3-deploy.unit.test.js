@@ -3,7 +3,7 @@ const awsS3Deploy = require('../aws-s3-deploy.js')
 describe('pipes:aws-s3-deploy', () => {
   test('should pipe for slack notify', () => {
     const expected = {
-      pipe: 'atlassian/aws-s3-deploy:0.2.2',
+      pipe: 'atlassian/aws-s3-deploy:0.3.2',
       variables: {
         AWS_ACCESS_KEY_ID: '$AWS_DEV_ACCESS_KEY_ID',
         AWS_SECRET_ACCESS_KEY: '$AWS_DEV_SECRET_ACCESS_KEY',
