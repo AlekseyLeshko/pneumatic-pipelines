@@ -1,3 +1,5 @@
+const cleanUpObject = require('../helpers/clean-up-object')
+
 module.exports = ({
   awsAccessKeyId,
   awsSecretAccessKey,
@@ -14,7 +16,7 @@ module.exports = ({
   debug,
 }) => ({
   pipe: 'atlassian/aws-s3-deploy:0.3.2',
-  variables: {
+  variables: cleanUpObject({
     AWS_ACCESS_KEY_ID: awsAccessKeyId,
     AWS_SECRET_ACCESS_KEY: awsSecretAccessKey,
     AWS_DEFAULT_REGION: awsDefaultRegion,
@@ -28,5 +30,5 @@ module.exports = ({
     DELETE_FLAG: deleteFlag,
     EXTRA_ARGS: extraArgs,
     DEBUG: debug,
-  },
+  }),
 })
