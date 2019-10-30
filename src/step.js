@@ -16,4 +16,5 @@ module.exports = {
   addImage: addString('image')(mergeForStep),
   addDeployment: addString('deployment')(mergeForStep),
   addName: addString('name')(mergeForStep),
+  addSize: addString('size')(mergeForStep),
 }
