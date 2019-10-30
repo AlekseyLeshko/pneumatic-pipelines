@@ -35,10 +35,12 @@
     "husky": "^3.0.9",
     "jest": "^24.9.0",
     "lint-staged": "^9.4.2",
-    "prettier": "^1.18.2"
-  },
-  "dependencies": {
+    "prettier": "^1.18.2",
     "ramda": "^0.26.1",
     "yaml": "^1.7.2"
+  },
+  "peerDependencies": {
+    "ramda": "0.x",
+    "yaml": "1.x"
   }
 }
