@@ -11,6 +11,7 @@ describe('pneumatic pipelines', () => {
         name: 'awesome step',
         caches: [ 'node', 'yarn' ],
         image: 'node:11.6.0',
+        size: 'x2',
         deployment: 'production',
         script: [
           'ENV=production',
@@ -38,6 +39,7 @@ describe('pneumatic pipelines', () => {
       step.addArtifacts(['dist/**']),
       step.addArtifact('screenshots/**'),
       step.addImage('node:11.6.0'),
+      step.addSize('x2'),
       step.addDeployment('production'),
       step.addName('awesome step'),
     )()
